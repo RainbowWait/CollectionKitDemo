@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ShangYouNews.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>656288FA3EBEBAB57ED0323358795765CA0AC7EB</string>
+				<key>dateExpires</key>
+				<string>2018/11/26</string>
+				<key>type</key>
+				<string>iOS Development</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>656288FA3EBEBAB57ED0323358795765CA0AC7EB</string>
+						<key>dateExpires</key>
+						<string>2018/11/26</string>
+						<key>type</key>
+						<string>iOS Development</string>
+					</dict>
+					<key>name</key>
+					<string>JGProgressHUD.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>S4SZ64K3RL</string>
+						<key>name</key>
+						<string>China Chongqing morning post net tech Co., LTD.</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>656288FA3EBEBAB57ED0323358795765CA0AC7EB</string>
+						<key>dateExpires</key>
+						<string>2018/11/26</string>
+						<key>type</key>
+						<string>iOS Development</string>
+					</dict>
+					<key>name</key>
+					<string>PecanSwift.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>S4SZ64K3RL</string>
+						<key>name</key>
+						<string>China Chongqing morning post net tech Co., LTD.</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>656288FA3EBEBAB57ED0323358795765CA0AC7EB</string>
+						<key>dateExpires</key>
+						<string>2018/11/26</string>
+						<key>type</key>
+						<string>iOS Development</string>
+					</dict>
+					<key>name</key>
+					<string>Realm.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>S4SZ64K3RL</string>
+						<key>name</key>
+						<string>China Chongqing morning post net tech Co., LTD.</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>656288FA3EBEBAB57ED0323358795765CA0AC7EB</string>
+						<key>dateExpires</key>
+						<string>2018/11/26</string>
+						<key>type</key>
+						<string>iOS Development</string>
+					</dict>
+					<key>name</key>
+					<string>RealmSwift.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>S4SZ64K3RL</string>
+						<key>name</key>
+						<string>China Chongqing morning post net tech Co., LTD.</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>656288FA3EBEBAB57ED0323358795765CA0AC7EB</string>
+						<key>dateExpires</key>
+						<string>2018/11/26</string>
+						<key>type</key>
+						<string>iOS Development</string>
+					</dict>
+					<key>name</key>
+					<string>YYKit.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>S4SZ64K3RL</string>
+						<key>name</key>
+						<string>China Chongqing morning post net tech Co., LTD.</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>S4SZ64K3RL.com.news.shangyounews</string>
+				<key>aps-environment</key>
+				<string>development</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>S4SZ64K3RL</string>
+				<key>get-task-allow</key>
+				<true/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>S4SZ64K3RL.com.news.shangyounews</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>ShangYouNews.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>c6a84385-780b-4309-aec5-c8adbf0f9628</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: com.news.shangyounews</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>S4SZ64K3RL</string>
+				<key>name</key>
+				<string>China Chongqing morning post net tech Co., LTD.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
