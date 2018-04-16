@@ -9,7 +9,7 @@
 import UIKit
 
 class ReloadDataViewController: CollectionViewController {
-
+    
     let dataProvider = ArrayDataProvider<Int>(data: Array(0..<5)) { (_, data) in
         return "\(data)"
     }
@@ -24,7 +24,7 @@ class ReloadDataViewController: CollectionViewController {
         button.layer.shadowOpacity = 0.1
         return button
     }()
-     var currentMax: Int = 5
+    var currentMax: Int = 5
     override func viewDidLoad() {
         super.viewDidLoad()
         addButton.addTarget(self, action: #selector(add), for: .touchUpInside)
@@ -32,10 +32,10 @@ class ReloadDataViewController: CollectionViewController {
         
         collectionView.contentInset = UIEdgeInsetsMake(10, 10, 10, 10)
         let layout = FlowLayout<Int>(lineSpacing: 15,
-                                interitemSpacing: 15,
-                                justifyContent: .center,
-                                alignItems: .end,
-                                alignContent: .center)
+                                     interitemSpacing: 15,
+                                     justifyContent: .center,
+                                     alignItems: .start,
+                                     alignContent: .start)
         let presenter = CollectionPresenter()
         presenter.insertAnimation = .fade
         presenter.deleteAnimation = .scale
@@ -79,21 +79,21 @@ class ReloadDataViewController: CollectionViewController {
         collectionView.reloadData()
         collectionView.scrollTo(edge: .bottom, animated:true)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

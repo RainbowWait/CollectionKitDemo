@@ -7,7 +7,11 @@
 //
 
 import UIKit
+import CollectionKit
 
+class AnimatedReloadPresenter: CollectionPresenter {
+    
+}
 class ReloadAnimationViewController: CollectionViewController {
 
     override func viewDidLoad() {
