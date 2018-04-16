@@ -16,6 +16,13 @@
 		A893DF2E20807ED80065F498 /* ReloadAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893DF2D20807ED80065F498 /* ReloadAnimationViewController.swift */; };
 		A893DF3020807EE70065F498 /* ReloadDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893DF2F20807EE70065F498 /* ReloadDataViewController.swift */; };
 		A893DF3220807F7F0065F498 /* PresenterExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A893DF3120807F7F0065F498 /* PresenterExampleViewController.swift */; };
+		A8E20C0E20843956002045F0 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E20C0D20843956002045F0 /* TestData.swift */; };
+		A8E20C1320844AA7002045F0 /* YetAnotherAnimationLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E20C1220844AA7002045F0 /* YetAnotherAnimationLibrary.framework */; };
+		A8E20C1520844ABB002045F0 /* WobblePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E20C1420844ABB002045F0 /* WobblePresenter.swift */; };
+		A8E20C1620844ADB002045F0 /* YetAnotherAnimationLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E20C1220844AA7002045F0 /* YetAnotherAnimationLibrary.framework */; };
+		A8E20C1720844ADB002045F0 /* YetAnotherAnimationLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A8E20C1220844AA7002045F0 /* YetAnotherAnimationLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A8E20C1A20847F6A002045F0 /* ArticleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E20C1920847F6A002045F0 /* ArticleData.swift */; };
+		A8E20C1C20848551002045F0 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E20C1B20848551002045F0 /* ArticleView.swift */; };
 		A8F995D320805ABD006B27F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F995D220805ABD006B27F3 /* AppDelegate.swift */; };
 		A8F995D520805ABD006B27F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F995D420805ABD006B27F3 /* ViewController.swift */; };
 		A8F995D820805ABD006B27F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F995D620805ABD006B27F3 /* Main.storyboard */; };
@@ -89,6 +96,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A8E20C1720844ADB002045F0 /* YetAnotherAnimationLibrary.framework in Embed Frameworks */,
 				A893DF1C20805FB10065F498 /* CollectionKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -105,6 +113,11 @@
 		A893DF2D20807ED80065F498 /* ReloadAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadAnimationViewController.swift; sourceTree = "<group>"; };
 		A893DF2F20807EE70065F498 /* ReloadDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadDataViewController.swift; sourceTree = "<group>"; };
 		A893DF3120807F7F0065F498 /* PresenterExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterExampleViewController.swift; sourceTree = "<group>"; };
+		A8E20C0D20843956002045F0 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		A8E20C1220844AA7002045F0 /* YetAnotherAnimationLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YetAnotherAnimationLibrary.framework; sourceTree = "<group>"; };
+		A8E20C1420844ABB002045F0 /* WobblePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WobblePresenter.swift; sourceTree = "<group>"; };
+		A8E20C1920847F6A002045F0 /* ArticleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleData.swift; sourceTree = "<group>"; };
+		A8E20C1B20848551002045F0 /* ArticleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		A8F995CF20805ABD006B27F3 /* CollectionKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F995D220805ABD006B27F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8F995D420805ABD006B27F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +178,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8E20C1320844AA7002045F0 /* YetAnotherAnimationLibrary.framework in Frameworks */,
+				A8E20C1620844ADB002045F0 /* YetAnotherAnimationLibrary.framework in Frameworks */,
 				A893DF1A20805FA80065F498 /* CollectionKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				A893DF3120807F7F0065F498 /* PresenterExampleViewController.swift */,
+				A8E20C1420844ABB002045F0 /* WobblePresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -205,7 +221,9 @@
 		A893DF2020807C1C0065F498 /* Articles */ = {
 			isa = PBXGroup;
 			children = (
+				A8E20C1920847F6A002045F0 /* ArticleData.swift */,
 				A893DF2720807E8B0065F498 /* ArticleExampleViewController.swift */,
+				A8E20C1B20848551002045F0 /* ArticleView.swift */,
 			);
 			path = Articles;
 			sourceTree = "<group>";
@@ -245,6 +263,7 @@
 		A8F995C620805ABD006B27F3 = {
 			isa = PBXGroup;
 			children = (
+				A8E20C1220844AA7002045F0 /* YetAnotherAnimationLibrary.framework */,
 				A893DF1920805FA80065F498 /* CollectionKit.framework */,
 				A8F9960320805C80006B27F3 /* Sources */,
 				A8F995D120805ABD006B27F3 /* CollectionKitDemo */,
@@ -270,6 +289,7 @@
 				A8F9965620805CD4006B27F3 /* Demo */,
 				A8F995D220805ABD006B27F3 /* AppDelegate.swift */,
 				A8F995D420805ABD006B27F3 /* ViewController.swift */,
+				A8E20C0D20843956002045F0 /* TestData.swift */,
 				A8F995D620805ABD006B27F3 /* Main.storyboard */,
 				A8F995DC20805ABD006B27F3 /* Assets.xcassets */,
 				A8F995DE20805ABD006B27F3 /* LaunchScreen.storyboard */,
@@ -568,6 +588,7 @@
 				A8F9964620805C80006B27F3 /* TransposeLayout.swift in Sources */,
 				A8F995DB20805ABD006B27F3 /* CollectionKitDemo.xcdatamodeld in Sources */,
 				A8F9963520805C80006B27F3 /* ViewCollectionProvider.swift in Sources */,
+				A8E20C1C20848551002045F0 /* ArticleView.swift in Sources */,
 				A8F9963420805C80006B27F3 /* SpaceCollectionProvider.swift in Sources */,
 				A893DF2820807E8B0065F498 /* ArticleExampleViewController.swift in Sources */,
 				A8F9963920805C80006B27F3 /* CollectionDataProvider.swift in Sources */,
@@ -597,10 +618,13 @@
 				A893DF2E20807ED80065F498 /* ReloadAnimationViewController.swift in Sources */,
 				A8F995D320805ABD006B27F3 /* AppDelegate.swift in Sources */,
 				A8F9963820805C80006B27F3 /* ClosureDataProvider.swift in Sources */,
+				A8E20C0E20843956002045F0 /* TestData.swift in Sources */,
 				A8F9965320805C80006B27F3 /* CollectionProvider.swift in Sources */,
 				A893DF2620807E7D0065F498 /* MessagesViewController.swift in Sources */,
 				A8F9965420805C80006B27F3 /* ClosureViewProvider.swift in Sources */,
 				A893DF3020807EE70065F498 /* ReloadDataViewController.swift in Sources */,
+				A8E20C1520844ABB002045F0 /* WobblePresenter.swift in Sources */,
+				A8E20C1A20847F6A002045F0 /* ArticleData.swift in Sources */,
 				A8F9965020805C80006B27F3 /* AnyCollectionProvider.swift in Sources */,
 				A8F9963220805C80006B27F3 /* EmptyStateCollectionProvider.swift in Sources */,
 				A8F9963120805C80006B27F3 /* CollectionViewCollectionProvider.swift in Sources */,

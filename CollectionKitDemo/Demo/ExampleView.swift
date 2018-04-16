@@ -14,12 +14,13 @@ class ExampleView: UIView {
     let titleLabel = UILabel()
     titleLabel.font = .boldSystemFont(ofSize: 24)
     titleLabel.textColor = UIColor.red
+    titleLabel.numberOfLines = 0
     return titleLabel
   }()
 
   let cardView: UIView = {
     let cardView = UIView()
-    cardView.backgroundColor = UIColor.cyan
+//    cardView.backgroundColor = UIColor.lightGray
     cardView.layer.cornerRadius = 8
     cardView.layer.shadowColor = UIColor.black.cgColor
     cardView.layer.shadowOffset = CGSize(width: 0, height: 12)
@@ -48,6 +49,7 @@ class ExampleView: UIView {
     let size = titleLabel.sizeThatFits(bounds.size)
     titleLabel.frame = CGRect(origin: CGPoint(x: 0, y: 10), size: size)
     let labelHeight = titleLabel.frame.maxY + 10
+    
     cardView.frame = CGRect(x: 0, y: labelHeight, width: bounds.width, height: bounds.height - labelHeight)
     contentVC?.view.frame = cardView.bounds
   }

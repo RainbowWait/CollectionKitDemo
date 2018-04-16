@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PresenterExampleViewController: UIViewController {
+class PresenterExampleViewController: CollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

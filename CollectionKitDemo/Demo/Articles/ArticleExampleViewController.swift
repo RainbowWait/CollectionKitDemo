@@ -8,12 +8,33 @@
 
 import UIKit
 
-class ArticleExampleViewController: UIViewController {
+class ArticleExampleViewController: CollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let articles: [ArticleData] = {
+            var acticels = [ArticleData]()
+            for i in 1..<21 {
+                if i % 3 == 0 {
+                     let mode = ArticleData(hueValue: CGFloat(i) / CGFloat(20), title: "Article \(i)", subTitle: "This is the subtitle for article and me like this method or handling this thing ,do you like this method \(i)")
+                    acticels.append(mode)
+                } else {
+                     let mode = ArticleData(hueValue: CGFloat(i) / CGFloat(20), title: "Article \(i)", subTitle: "This is the subtitle for article \(i)")
+                     acticels.append(mode)
+                }
+            }
+            return acticels
+        }()
+        let providrer = CollectionProvider(data: articles, viewUpdater: {(view: ArticleView, data: ArticleData, at: Int) in
+            view.populate(article: data)
+        })
+        providrer.layout = FlowLayout(lineSpacing: 30)
+        providrer.sizeProvider = {(_, view, size) -> CGSize in
+            return CGSize(width: size.width, height: 200)
+        }
+        self.provider = providrer
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

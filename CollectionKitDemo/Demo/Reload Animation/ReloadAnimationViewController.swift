@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ReloadAnimationViewController: UIViewController {
+class ReloadAnimationViewController: CollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,13 +7,38 @@
 //
 
 import UIKit
-
-class HorizontalGalleryViewController: UIViewController {
+import CollectionKit
+func imageSizeProvider(at: Int, data: UIImage, collectionSize: CGSize) -> CGSize {
+    var imageSize = data.size
+    if imageSize.width > collectionSize.width {
+        imageSize.height /= imageSize.width/collectionSize.width
+        imageSize.width = collectionSize.width
+    }
+    if imageSize.height > collectionSize.height {
+        imageSize.width /= imageSize.height/collectionSize.height
+        imageSize.height = collectionSize.height
+    }
+    return imageSize
+}
+class HorizontalGalleryViewController: CollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.collectionView.contentInset = UIEdgeInsetsMake(10, 10, 10, 10)
+        let provider = CollectionProvider(data: testImages, viewGenerator: { (data, index) -> UIImageView in
+            let view = UIImageView()
+            view.layer.cornerRadius = 5
+            view.clipsToBounds = true
+            return view
+        }, viewUpdater: {(view: UIImageView, data: UIImage, at: Int) in
+            view.image = data
+        })
+            let visibleFrameInsets = UIEdgeInsets(top: 0, left: -100, bottom: 0, right: -100)
+        provider.layout = WaterfallLayout(columns: 2).transposed().insetVisibleFrame(by: visibleFrameInsets)
+        provider.sizeProvider = imageSizeProvider
+        provider.presenter = WobblePresenter()
+        self.provider = provider
+        
     }
 
     override func didReceiveMemoryWarning() {

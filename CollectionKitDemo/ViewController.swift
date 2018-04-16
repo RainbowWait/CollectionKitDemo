@@ -15,7 +15,7 @@ func space(_ height: CGFloat) -> AnyCollectionProvider {
 }
 class ViewController: CollectionViewController {
     let examples: [(String, UIViewController.Type)] = [
-        ("Horizontal Gallery啊哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈或罚款解放东路富家大室立刻就发生", HorizontalGalleryViewController.self),
+        ("Horizontal Gallery", HorizontalGalleryViewController.self),
         ("Grid", GridViewController.self),
         ("Articles", ArticleExampleViewController.self),
         ("Reload", ReloadDataViewController.self),
@@ -27,14 +27,11 @@ class ViewController: CollectionViewController {
         super.viewDidLoad()
         let examplesSection = CollectionProvider(data: examples, viewUpdater: {(view: ExampleView, data: (String, UIViewController.Type), at: Int) in
             view.populate(title: data.0, contentViewControllerType: data.1)
-            view.backgroundColor = UIColor.lightGray
+//            view.backgroundColor = UIColor.lightGray
         })
-        examplesSection.layout = FlowLayout(lineSpacing: 30).inset(by: bodyInset)
+        examplesSection.layout = FlowLayout(lineSpacing: 10).inset(by: bodyInset)
         examplesSection.sizeProvider = {(index, _, size)-> CGSize in
-            if index == 0 {
-                return CGSize(width: size.width, height: 100)
-            }
-           return CGSize(width: size.width, height: size.height)
+           return CGSize(width: size.width, height: size.height * 0.7)
         }
         provider = CollectionComposer(
             space(10),

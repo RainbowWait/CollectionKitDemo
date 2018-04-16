@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MessagesViewController: UIViewController {
+class MessagesViewController: CollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
